@@ -9,7 +9,7 @@ export default function PrimaryHeader() {
   }
 
   return (
-    <header className="fixed flex justify-between items-center w-full px-[3.12rem] py-[1.06rem] isolate bg-primary z-10">
+    <header className="fixed flex justify-between items-center w-full px-[3.12rem] py-[1.06rem] isolate bg-primary z-10 sm:py-8">
       <span className="">
         <img src="src/assets/company-logo.svg" alt="Jo's logo" />
       </span>
