@@ -23,7 +23,7 @@ function App() {
             In a world so painfully serious, yet so ridiculous, you knew it was
             only a matter of time before plant-based steak became a thing.
           </p>
-          <button className="mt-auto w-full h-[3.375rem] max-w-sm text-xl bg-black text-white uppercase sm:max-w-[16.875rem] sm:text-2xl sm:mt-12">
+          <button className="mt-auto w-full h-[3.375rem] max-w-sm text-xl bg-black text-white uppercase sm:max-w-[16.875rem] sm:text-2xl sm:mt-12 hover:bg-accent duration-75 hover:text-black">
             Browse Menu
           </button>
           <span className="absolute right-[clamp(1.5rem,1rem+3.3vw,4rem)] top-[clamp(21%,50%-15vw,40%)] w-[clamp(16rem,5rem+29.18vw,31.26rem)] -z-10 -rotate-[2.36deg] sm:right-16">

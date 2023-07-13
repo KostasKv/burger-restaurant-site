@@ -1,4 +1,5 @@
 import { useState } from "react";
+import companyLogo from "../assets/company-logo.svg";
 import smileIcon from "../assets/icon-smile.svg";
 import "./PrimaryHeader.css";
 
@@ -11,8 +12,8 @@ export default function PrimaryHeader() {
 
   return (
     <header className="fixed flex justify-between items-center w-full px-[3.12rem] py-[1.06rem] isolate bg-primary z-10 sm:py-8">
-      <span className="">
-        <img src="src/assets/company-logo.svg" alt="Jo's logo" />
+      <span className="text-3xl font-['Bowlby_One'] cursor-pointer">
+        <img src={companyLogo} alt="JO'S&copy;" />
       </span>
       <button
         className="sm:hidden"
@@ -64,16 +65,16 @@ export default function PrimaryHeader() {
         <ul
           id="primary-navigation"
           className={`flex flex-col gap-8 text-2xl font-semibold leading-normal uppercase sm:flex-row sm:visible sm:static`}>
-          <li>
+          <li className="hover:text-accent duration-75">
             <a href="">About</a>
           </li>
-          <li>
+          <li className="hover:text-accent duration-75">
             <a href="">Menu</a>
           </li>
-          <li>
+          <li className="hover:text-accent duration-75">
             <a href="">Review</a>
           </li>
-          <li>
+          <li className="hover:text-accent duration-75">
             <a href="">Social</a>
           </li>
         </ul>
