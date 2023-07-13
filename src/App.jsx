@@ -4,7 +4,7 @@ function App() {
   return (
     <>
       <PrimaryHeader />
-      <section className="relative isolate h-screen bg-primary px-[clamp(1.25rem,0.5rem+2.64vw,3rem)] flex flex-col pt-[6.69rem] sm:pt-[11.25rem] pb-10">
+      <section className="relative isolate min-h-screen bg-primary px-[clamp(1.25rem,0.5rem+2.64vw,3rem)] flex flex-col pt-[6.69rem] sm:pt-[11.25rem] pb-10">
         <h1 className="text-[clamp(1.5rem,1rem+6.4vw,6.875rem)] uppercase leading-none ">
           New York's <br /> favorite <br /> burger
         </h1>
