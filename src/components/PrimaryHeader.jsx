@@ -1,4 +1,5 @@
 import { useState } from "react";
+import smileIcon from "../assets/icon-smile.svg";
 import "./PrimaryHeader.css";
 
 export default function PrimaryHeader() {
@@ -77,7 +78,7 @@ export default function PrimaryHeader() {
           </li>
         </ul>
         <span className="hsm: sm:hidden mt-[min(4rem,5vh)]">
-          <img src="src/assets/icon-smile.svg" alt="" />
+          <img src={smileIcon} alt="" />
         </span>
       </nav>
     </header>
