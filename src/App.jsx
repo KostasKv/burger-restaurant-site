@@ -1,4 +1,4 @@
-import PrimaryHeader from "./components/PrimaryHeader";
+import PrimaryHeader from "./components/PrimaryHeader/PrimaryHeader";
 import burger1Img from "./assets/burger-1.png";
 import smileIcon from "./assets/icon-smile.svg";
 

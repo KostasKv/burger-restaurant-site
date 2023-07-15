@@ -1,7 +1,8 @@
 import { useState } from "react";
-import companyLogo from "../assets/company-logo.svg";
-import smileIcon from "../assets/icon-smile.svg";
+import companyLogo from "../../assets/company-logo.svg";
+import smileIcon from "../../assets/icon-smile.svg";
 import "./PrimaryHeader.css";
+import HamburgerMenuButton from "../HambugerMenuButton/HamburgerMenuButton";
 
 export default function PrimaryHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,49 +16,7 @@ export default function PrimaryHeader() {
       <span className="text-3xl font-['Bowlby_One'] cursor-pointer">
         <img src={companyLogo} alt="JO'S&copy;" />
       </span>
-      <button
-        className="sm:hidden"
-        onClick={onMenuClick}
-        aria-controls="primary-navigation"
-        aria-expanded="false">
-        <span className="sr-only">Menu</span>
-        <svg
-          width="40"
-          height="40"
-          viewBox="0 0 40 40"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <g id="Group 3571">
-            <circle id="Ellipse 40" cx="20" cy="20" r="20" fill="black" />
-            <g id="Group 3570">
-              <rect
-                id="Rectangle 1136"
-                x="11"
-                y="14"
-                width="18"
-                height="2"
-                fill="white"
-              />
-              <rect
-                id="Rectangle 1137"
-                x="11"
-                y="19"
-                width="18"
-                height="2"
-                fill="white"
-              />
-              <rect
-                id="Rectangle 1138"
-                x="11"
-                y="24"
-                width="18"
-                height="2"
-                fill="white"
-              />
-            </g>
-          </g>
-        </svg>
-      </button>
+      <HamburgerMenuButton onClick={onMenuClick} />
       <nav
         className={`fixed -z-10 sm:relative ${
           isMenuOpen ? "visible" : "invisible"
