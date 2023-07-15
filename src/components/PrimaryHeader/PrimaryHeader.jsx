@@ -16,7 +16,7 @@ export default function PrimaryHeader() {
       <span className="text-3xl font-['Bowlby_One'] cursor-pointer">
         <img src={companyLogo} alt="JO'S&copy;" />
       </span>
-      <HamburgerMenuButton onClick={onMenuClick} />
+      <HamburgerMenuButton isExpanded={isMenuOpen} onClick={onMenuClick} />
       <nav
         className={`fixed -z-10 sm:relative ${
           isMenuOpen ? "visible" : "invisible"
