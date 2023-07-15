@@ -25,16 +25,16 @@ export default function PrimaryHeader() {
           id="primary-navigation"
           className={`flex flex-col gap-8 text-2xl font-semibold leading-normal uppercase sm:flex-row sm:visible sm:static`}>
           <li className="hover:text-accent duration-75">
-            <a href="">About</a>
+            <a href="#about">About</a>
           </li>
           <li className="hover:text-accent duration-75">
-            <a href="">Menu</a>
+            <a href="#menu">Menu</a>
           </li>
           <li className="hover:text-accent duration-75">
-            <a href="">Review</a>
+            <a href="#review">Review</a>
           </li>
           <li className="hover:text-accent duration-75">
-            <a href="">Social</a>
+            <a href="#social">Social</a>
           </li>
         </ul>
         <span className="hsm: sm:hidden mt-[min(4rem,5vh)]">

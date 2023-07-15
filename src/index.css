@@ -16,3 +16,13 @@
     font-family: "Bowlby One", sans-serif;
   }
 }
+
+@layer utilities {
+  /* https://www.joshwcomeau.com/css/full-bleed/ */
+  /* Set [&>*]:cols-start-2 on parent container when using this. */
+  .full-bleed {
+    width: 100%;
+    grid-column: 1 / -1;
+    grid-column-start: 1 !important;
+  }
+}
