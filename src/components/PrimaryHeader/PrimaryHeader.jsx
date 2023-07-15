@@ -18,9 +18,9 @@ export default function PrimaryHeader() {
       </span>
       <HamburgerMenuButton isExpanded={isMenuOpen} onClick={onMenuClick} />
       <nav
-        className={`fixed -z-10 sm:relative ${
-          isMenuOpen ? "visible" : "invisible"
-        }  flex flex-col items-center justify-center bg-primary inset-0 translate-y-4 sm:translate-y-0`}>
+        className={`fixed -z-10 sm:relative duration-500 ${
+          isMenuOpen ? "visible translate-y-4" : "invisible -translate-y-full"
+        }  flex flex-col items-center justify-center bg-primary inset-0 sm:translate-y-0`}>
         <ul
           id="primary-navigation"
           className={`flex flex-col gap-8 text-2xl font-semibold leading-normal uppercase sm:flex-row sm:visible sm:static`}>
