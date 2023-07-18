@@ -4,4 +4,6 @@ A burger restaurant website implemented from Figma designs (from an [iCodeThis](
 
 Built using Vite + Tailwind CSS.
 
+Live site: [https://kostaskv-burger-restaurant.netlify.app/](https://kostaskv-burger-restaurant.netlify.app/)
+
 ![](public/burger.png)
