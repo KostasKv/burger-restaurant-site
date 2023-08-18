@@ -1,8 +1,9 @@
+"use client";
+import Image from "next/image";
 import { useState } from "react";
-import companyLogo from "../../assets/company-logo.svg";
-import smileIcon from "../../assets/icon-smile.svg";
-import "./PrimaryHeader.css";
-import HamburgerMenuButton from "../HambugerMenuButton/HamburgerMenuButton";
+import companyLogo from "@public/company-logo.svg";
+import smileIcon from "@public/icon-smile.svg";
+import HamburgerMenuButton from "./hamburger-menu-button";
 
 export default function PrimaryHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,8 +14,8 @@ export default function PrimaryHeader() {
 
   return (
     <header className="fixed flex justify-between items-center w-full px-[3.12rem] py-[1.06rem] isolate bg-primary z-10 sm:py-8">
-      <span className="text-3xl font-['Bowlby_One'] cursor-pointer">
-        <img src={companyLogo} alt="JO'S&copy;" />
+      <span className={"text-3xl font-serif-alt cursor-pointer"}>
+        <Image src={companyLogo} alt="JO'S&copy;" />
       </span>
       <HamburgerMenuButton isExpanded={isMenuOpen} onClick={onMenuClick} />
       <nav
@@ -38,7 +39,7 @@ export default function PrimaryHeader() {
           </li>
         </ul>
         <span className="hsm: sm:hidden mt-[min(4rem,5vh)]">
-          <img src={smileIcon} alt="" />
+          <Image src={smileIcon} alt="" />
         </span>
       </nav>
     </header>

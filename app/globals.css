@@ -2,24 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  :root {
-    font-family: "Oswald", sans-serif;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: "Bowlby One", sans-serif;
-  }
-}
-
 @layer utilities {
   /* https://www.joshwcomeau.com/css/full-bleed/ */
-  /* Set [&>*]:cols-start-2 on parent container when using this. */
+  /* NOTE: Set [&>*]:cols-start-2 on parent container when using this. */
   .full-bleed {
     width: 100%;
     grid-column: 1 / -1;

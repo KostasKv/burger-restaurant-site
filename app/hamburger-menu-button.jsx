@@ -1,5 +1,3 @@
-import "./HambugerMenuButton.css";
-
 export default function HamburgerMenuButton({ isExpanded, onClick }) {
   return (
     <button
