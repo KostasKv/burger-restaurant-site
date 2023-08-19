@@ -43,7 +43,7 @@ export default function Home() {
             </p>
             <a
               href="#menu"
-              className="flex justify-center items-center mt-auto w-full h-[3.375rem] max-w-[20rem] text-xl bg-black text-white uppercase sm:max-w-[16.875rem] sm:text-2xl sm:mt-12 hover:bg-accent duration-75 hover:text-black">
+              className="flex justify-center items-center mt-auto w-full h-[3.375rem] max-w-[20rem] text-xl bg-black text-white uppercase sm:max-w-[16.875rem] sm:text-2xl sm:mt-12 hover:bg-accent focus:bg-accent duration-75 hover:text-black focus:text-black focus:outline-none">
               Browse Menu
             </a>
             <span className="absolute bottom-32 left-[15%] sm:top-[clamp(24%,50%-15vw,40%)] w-[clamp(16rem,5rem+29.18vw,31.26rem)] -z-10 -rotate-[2.36deg] sm:right-[clamp(1.5rem,1rem+3.3vw,4rem)] sm:inset-auto">
@@ -116,7 +116,7 @@ export default function Home() {
                 We&apos;re different
               </p>
             </div>
-            <button className="w-16 h-16 rounded-full text-white bg-primary">
+            <button className="w-16 h-16 rounded-full text-white bg-primary hover:bg-accent focus:bg-accent hover:text-black focus:text-black focus:outline-none duration-75">
               <FontAwesomeIcon icon={faPlay} size="lg" />
             </button>
           </div>
@@ -279,7 +279,7 @@ export default function Home() {
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
             </div>
-            <button className="mt-5 w-full py-3 text-xl font-semibold border-black border-2 uppercase">
+            <button className="mt-5 w-full py-3 text-xl font-semibold border-black border-2 uppercase hover:bg-accent focus:bg-accent focus:outline-none duration-75">
               LOAD MORE
             </button>
           </div>
@@ -318,7 +318,7 @@ export default function Home() {
               href="https://www.instagram.com/"
               target="_blank"
               rel="noreferrer"
-              className="relative flex justify-center items-center text-[clamp(1.7rem,8.5vw-0.3rem,3.6rem)] uppercase text-primary font-semibold bg-accent before:pb-[100%] before:block sm:text-[clamp(1rem,3vw,4.5rem)]">
+              className="relative flex justify-center items-center text-[clamp(1.7rem,8.5vw-0.3rem,3.6rem)] uppercase text-primary font-semibold bg-accent before:pb-[100%] before:block sm:text-[clamp(1rem,3vw,4.5rem)] hover:text-accent focus:text-accent hover:bg-black focus:bg-black focus:outline-none duration-75">
               FOLLOW US <br /> ON <br /> INSTAGRAM
             </a>
           </div>
@@ -343,25 +343,31 @@ export default function Home() {
               tips, and promotions about our products and services straight to
               your inbox.
             </p>
-            <form className="mt-6 flex flex-col md:flex-row md:mt-4 max-w-[34rem]">
+            <form className="mt-6 flex flex-col md:flex-row md:mt-4 max-w-[34rem] ">
               <input
                 type="email"
                 name="newsletter"
                 id="newsletter-email"
                 placeholder="Enter your email"
-                className="flex-grow py-[1rem] px-1 text-center bg-transparent border-black border-2 placeholder:text-black"
+                className="flex-grow py-[1rem] px-1 text-center bg-transparent border-black border-2 placeholder:text-black focus:outline-none focus:placeholder:text-transparent"
               />
               <button
                 // type="submit"
                 type="button"
-                className="mt-4 py-3 px-6 text-xl font-semibold bg-black text-white uppercase sm:text-lg md:mt-0">
+                className="mt-4 py-3 px-6 text-xl font-semibold bg-black text-white uppercase sm:text-lg md:mt-0 hover:bg-accent focus:bg-accent hover:text-black focus:text-black focus:outline-none duration-75">
                 SUBSCRIBE
               </button>
             </form>
             <div className="mt-12 mx-auto w-fit flex gap-3 uppercase text-sm sm:text-base md:mx-0 md:mt-20">
-              <a className="cursor-pointer hover:underline">PRIVACY</a>
-              <a className="cursor-pointer hover:underline">TERMS</a>
-              <a className="cursor-pointer hover:underline">ACCESSIBILITY</a>
+              <a className="cursor-pointer hover:text-accent duration-75">
+                PRIVACY
+              </a>
+              <a className="cursor-pointer hover:text-accent duration-75">
+                TERMS
+              </a>
+              <a className="cursor-pointer hover:text-accent duration-75">
+                ACCESSIBILITY
+              </a>
             </div>
           </div>
         </div>
