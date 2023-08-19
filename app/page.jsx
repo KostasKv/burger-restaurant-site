@@ -45,10 +45,15 @@ export default function Home() {
               href="#menu"
               className="flex justify-center items-center mt-auto w-full h-[3.375rem] max-w-[20rem] text-xl bg-black text-white uppercase sm:max-w-[16.875rem] sm:text-2xl sm:mt-12 hover:bg-accent duration-75 hover:text-black">
               Browse Menu
-              <span className="absolute bottom-32 left-[15%] sm:top-[clamp(21%,50%-15vw,40%)] w-[clamp(16rem,5rem+29.18vw,31.26rem)] -z-10 -rotate-[2.36deg] sm:right-[clamp(1.5rem,1rem+3.3vw,4rem)] sm:inset-auto">
-                <Image src={burger1Img} alt="burger" className="" />
-              </span>
             </a>
+            <span className="absolute bottom-32 left-[15%] sm:top-[clamp(21%,50%-15vw,40%)] w-[clamp(16rem,5rem+29.18vw,31.26rem)] -z-10 -rotate-[2.36deg] sm:right-[clamp(1.5rem,1rem+3.3vw,4rem)] sm:inset-auto">
+              <Image
+                src={burger1Img}
+                alt="burger"
+                priority
+                placeholder="blur"
+              />
+            </span>
           </div>
         </section>
         <section
@@ -68,6 +73,7 @@ export default function Home() {
                 src={joKitchenImg}
                 alt="Jo working in the kitchen"
                 className="max-w-[min(100%,35rem)] mx-auto"
+                placeholder="blur"
               />
               <figcaption className="mt-3 text-xs text-center sm:text-lg md:text-2xl">
                 This is Jo. He started everything 40 years ago.
@@ -80,6 +86,7 @@ export default function Home() {
                 src={openUntilClosedImg}
                 alt='Sign saying "We are open until closed"'
                 className="max-w-[min(100%,40rem)]"
+                placeholder="blur"
               />
             </div>
             <div>
@@ -270,9 +277,13 @@ export default function Home() {
                 alt="burger"
                 placeholder="blur"></Image>
             </div>
-            <div className="relative flex justify-center items-center text-[clamp(1.7rem,8.5vw-0.3rem,3.6rem)] uppercase text-primary font-semibold bg-accent before:pb-[100%] before:block sm:text-[clamp(1rem,3vw,4.5rem)]">
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noreferrer"
+              className="relative flex justify-center items-center text-[clamp(1.7rem,8.5vw-0.3rem,3.6rem)] uppercase text-primary font-semibold bg-accent before:pb-[100%] before:block sm:text-[clamp(1rem,3vw,4.5rem)]">
               FOLLOW US <br /> ON <br /> INSTAGRAM
-            </div>
+            </a>
           </div>
           <h2 className="hidden">Social</h2>
         </section>
@@ -304,7 +315,8 @@ export default function Home() {
                 className="flex-grow py-[1rem] px-1 text-center bg-transparent border-black border-2 placeholder:text-black"
               />
               <button
-                type="submit"
+                // type="submit"
+                type="button"
                 className="mt-4 py-3 px-6 text-xl font-semibold bg-black text-white uppercase sm:text-lg md:mt-0">
                 SUBSCRIBE
               </button>

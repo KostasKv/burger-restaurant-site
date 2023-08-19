@@ -13,8 +13,8 @@ export default function PrimaryHeader() {
   }
 
   return (
-    <header className="fixed w-full px-[1.25rem] py-[1.06rem] isolate bg-primary z-10 sm:py-8 sm:px-[3.12rem]">
-      <div className="max-w-[1440px] m-auto flex justify-between items-center">
+    <header className="fixed w-full px-[1.25rem] py-[1.06rem] bg-primary z-10 sm:py-8 sm:px-[3.12rem]">
+      <div className="max-w-[1440px] m-auto flex justify-between items-center isolate">
         <span className={"text-3xl font-serif-alt cursor-pointer"}>
           <Image src={companyLogo} alt="JO'S&copy;" />
         </span>
