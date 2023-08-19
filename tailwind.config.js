@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -14,6 +15,7 @@ module.exports = {
       colors: {
         primary: "#ee4a1e",
         accent: "#eef866",
+        background: "#f6f2f0",
       },
     },
   },
