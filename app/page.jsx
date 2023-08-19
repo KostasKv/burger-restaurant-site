@@ -24,8 +24,8 @@ export default function Home() {
     <>
       <PrimaryHeader />
       <main className="font-serif w-full flex flex-col items-center">
-        <section className="min-h-screen w-full bg-primary flex justify-center">
-          <div className="relative w-full max-w-[1440px] px-[clamp(1.25rem,6vw,5rem)] isolate flex flex-col min-h-screen sm:px-[clamp(1.25rem,0.5rem+2.64vw,3rem)] sm:pt-[11.25rem] pb-10 pt-[6.69rem] sm:items-start sm:pb-16">
+        <section className="min-h-screen w-full bg-primary flex justify-center max-h-[1200px]">
+          <div className="relative w-full max-w-[1440px] px-[clamp(1.25rem,6vw,5rem)] isolate flex flex-col  sm:px-[clamp(1.25rem,0.5rem+2.64vw,3rem)] sm:pt-[11.25rem] pb-10 pt-[6.69rem] sm:items-start sm:pb-16">
             <h1 className="relative font-serif-alt text-[clamp(1.5rem,1rem+6.4vw,6.875rem)] uppercase leading-none ">
               New York&apos;s <br /> favorite{" "}
               <span className="relative w-[1.08em] h-0 bg-purple-500 hidden sm:inline-block">
@@ -46,7 +46,7 @@ export default function Home() {
               className="flex justify-center items-center mt-auto w-full h-[3.375rem] max-w-[20rem] text-xl bg-black text-white uppercase sm:max-w-[16.875rem] sm:text-2xl sm:mt-12 hover:bg-accent duration-75 hover:text-black">
               Browse Menu
             </a>
-            <span className="absolute bottom-32 left-[15%] sm:top-[clamp(21%,50%-15vw,40%)] w-[clamp(16rem,5rem+29.18vw,31.26rem)] -z-10 -rotate-[2.36deg] sm:right-[clamp(1.5rem,1rem+3.3vw,4rem)] sm:inset-auto">
+            <span className="absolute bottom-32 left-[15%] sm:top-[clamp(24%,50%-15vw,40%)] w-[clamp(16rem,5rem+29.18vw,31.26rem)] -z-10 -rotate-[2.36deg] sm:right-[clamp(1.5rem,1rem+3.3vw,4rem)] sm:inset-auto">
               <Image
                 src={burger1Img}
                 alt="burger"
@@ -228,24 +228,61 @@ export default function Home() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
-          {/* TODO: Create review card component & displayer component*/}
-          <div className="p-5 bg-white md:p-5 h-fit grid gap-x-4 grid-cols-[max-content,1fr] grid-rows-[max-content,1fr]">
-            <Image
-              src="https://i.pravatar.cc/48"
-              width={48}
-              height={48}
-              className="w-8 h-8 rounded-full md:w-12 md:h-12"
-            />
-            <span className="self-center text-sm font-semibold uppercase">
-              John Doe
-            </span>
-            <div></div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+          <div className="mt-16 flex flex-col gap-3 max-w-[27rem] m-auto">
+            <div className="p-5 bg-white md:p-5 h-fit grid gap-x-4 grid-cols-[max-content,1fr] grid-rows-[max-content,1fr]">
+              <Image
+                src="https://i.pravatar.cc/48?img=64"
+                width={48}
+                height={48}
+                className="w-8 h-8 rounded-full md:w-12 md:h-12"
+              />
+              <span className="self-center text-sm font-semibold uppercase">
+                John
+              </span>
+              <div></div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna.
+              </p>
+            </div>
+            <div className="p-5 bg-white md:p-5 h-fit grid gap-x-4 grid-cols-[max-content,1fr] grid-rows-[max-content,1fr]">
+              <Image
+                src="https://i.pravatar.cc/48?img=35"
+                width={48}
+                height={48}
+                className="w-8 h-8 rounded-full md:w-12 md:h-12"
+              />
+              <span className="self-center text-sm font-semibold uppercase">
+                Andreea
+              </span>
+              <div></div>
+              <p>
+                Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat.
+              </p>
+            </div>
+            <div className="p-5 bg-white md:p-5 h-fit grid gap-x-4 grid-cols-[max-content,1fr] grid-rows-[max-content,1fr]">
+              <Image
+                src="https://i.pravatar.cc/48?img=67"
+                width={48}
+                height={48}
+                className="w-8 h-8 rounded-full md:w-12 md:h-12"
+              />
+              <span className="self-center text-sm font-semibold uppercase">
+                Matthew
+              </span>
+              <div></div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <button className="mt-5 w-full py-3 text-xl font-semibold border-black border-2 uppercase">
+              LOAD MORE
+            </button>
           </div>
-          {/* </div> */}
         </section>
         <section id="social" className="w-full">
           <div className="w-full h-fit grid grid-cols-2 grid-rows-2 sm:grid-cols-5 sm:grid-rows-1">
