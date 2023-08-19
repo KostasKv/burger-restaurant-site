@@ -45,17 +45,20 @@ export default function Home() {
               href="#menu"
               className="flex justify-center items-center mt-auto w-full h-[3.375rem] max-w-[20rem] text-xl bg-black text-white uppercase sm:max-w-[16.875rem] sm:text-2xl sm:mt-12 hover:bg-accent duration-75 hover:text-black">
               Browse Menu
+              <span className="absolute bottom-32 left-[15%] sm:top-[clamp(21%,50%-15vw,40%)] w-[clamp(16rem,5rem+29.18vw,31.26rem)] -z-10 -rotate-[2.36deg] sm:right-[clamp(1.5rem,1rem+3.3vw,4rem)] sm:inset-auto">
+                <Image src={burger1Img} alt="burger" className="" />
+              </span>
             </a>
-            <span className="absolute bottom-32 left-[15%] sm:top-[clamp(21%,50%-15vw,40%)] w-[clamp(16rem,5rem+29.18vw,31.26rem)] -z-10 -rotate-[2.36deg] sm:right-[clamp(1.5rem,1rem+3.3vw,4rem)] sm:inset-auto">
-              <Image src={burger1Img} alt="burger" />
-            </span>
           </div>
         </section>
         <section id="about" className="relative px-5 ">
           <h2 className="hidden">About</h2>
-          <p className="uppercase">
-            Hi, we&apos;re Jo&apos;s Burgers, a collective of creators who love
-            burgers and good food.
+          <p className="leading-none text-[clamp(2rem,6vw,4.5rem)] text-primary font-serif-alt uppercase max-w-[20ch]">
+            Hi, we&apos;re Jo&apos;s
+            <br />
+            Burgers, a collective of creators who
+            <br />
+            love burgers and good food.
           </p>
           <div>
             <Image
@@ -63,7 +66,9 @@ export default function Home() {
               alt="Jo working in the kitchen"
               className="max-w-[min(100%,40rem)]"
             />
-            <p>This is Jo. He started everything 40 years ago.</p>
+            <p className="text-xs text-center sm:text-lg md:text-2xl">
+              This is Jo. He started everything 40 years ago.
+            </p>
           </div>
           <div>
             <Image
@@ -72,8 +77,11 @@ export default function Home() {
               className="max-w-[min(100%,40rem)]"
             />
             <div>
-              <p className="uppercase">Food is for everyone.</p>
-              <p>
+              <p className="text-[2rem] leading-none text-primary font-serif-alt uppercase sm:text-5xl md:text-7xl">
+                Food is for <br />
+                everyone.
+              </p>
+              <p className="text-lg leading-normal text-primary sm:text-xl md:text-2xl">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -90,7 +98,7 @@ export default function Home() {
               className="absolute left-0 max-w-[100vw] grayscale -z-10"
             />
             <div>
-              <p className="leading-6 uppercase text-white font-serif-alt text-[1.5rem] text-center md:text-[2.5rem]">
+              <p className="leading-none uppercase text-white font-serif-alt text-2xl text-center sm:text-3xl md:text-[2.5rem]">
                 We&apos;re different
               </p>
             </div>
@@ -105,8 +113,10 @@ export default function Home() {
           />
         </section>
         <section id="menu" className="">
-          <h2 className="pt-[10rem] font-serif-alt">Our Burgers</h2>
-          <p>
+          <h2 className="text-[2rem] leading-none text-primary font-serif-alt uppercase sm:text-5xl md:text-7xl">
+            Our Burgers
+          </h2>
+          <p className="text-lg leading-normal text-primary sm:text-xl md:text-2xl">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -142,8 +152,10 @@ export default function Home() {
           </div>
         </section>
         <section id="review">
-          <h2 className="text-[2rem] font-serif-alt uppercase">SOME REVIEWS</h2>
-          <p className="text-lg">
+          <h2 className="text-[2rem] leading-none text-primary font-serif-alt uppercase sm:text-5xl md:text-7xl">
+            SOME REVIEWS
+          </h2>
+          <p className="text-lg leading-normal text-primary sm:text-xl md:text-2xl">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
@@ -160,7 +172,7 @@ export default function Home() {
             <Image src={burger6Img} alt="burger" placeholder="blur"></Image>
             <Image src={burger7Img} alt="burger" placeholder="blur"></Image>
             <div className="bg-accent uppercase text-primary">
-              FOLLOW US ON INSTAGRAM
+              FOLLOW US <br /> ON <br /> INSTAGRAM
             </div>
           </div>
           <h2 className="hidden">Social</h2>
@@ -171,10 +183,10 @@ export default function Home() {
           <Image src={companyLogo} alt="JO'S&copy;" />
         </span>
         <form className="flex flex-col">
-          <h2 className="font-serif-alt uppercase">
+          <h2 className="text-[2rem] leading-none font-serif-alt uppercase sm:text-4xl md:text-[2.5rem]">
             Subscribe to our newsletter
           </h2>
-          <p>
+          <p className="text-sm sm:text-base">
             By subscribing to our newsletter, you will receive the latest tips,
             and promotions about our products and services straight to your
             inbox.
@@ -184,12 +196,15 @@ export default function Home() {
             name="newsletter"
             id="newsletter-email"
             placeholder="Enter your email"
+            className="placeholder:text-black"
           />
-          <button type="submit" className="bg-black text-white uppercase">
+          <button
+            type="submit"
+            className="text-xl font-semibold bg-black text-white uppercase sm:text-lg">
             SUBSCRIBE
           </button>
         </form>
-        <div className="flex gap-2 uppercase">
+        <div className="flex gap-2 uppercase text-sm sm:text-base">
           <a className="cursor-pointer hover:underline">PrIVACY</a>
           <a className="cursor-pointer hover:underline">TERMS</a>
           <a className="cursor-pointer hover:underline">ACCESSIBILITY</a>
