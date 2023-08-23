@@ -27,16 +27,40 @@ export default function PrimaryHeader() {
             id="primary-navigation"
             className={`flex flex-col gap-8 text-2xl font-semibold leading-normal uppercase sm:flex-row sm:visible sm:static`}>
             <li className="hover:text-accent duration-75">
-              <a href="#about">About</a>
+              <a
+                href="#about"
+                onClick={() => {
+                  setIsMenuOpen(false);
+                }}>
+                About
+              </a>
             </li>
             <li className="hover:text-accent duration-75">
-              <a href="#menu">Menu</a>
+              <a
+                href="#menu"
+                onClick={() => {
+                  setIsMenuOpen(false);
+                }}>
+                Menu
+              </a>
             </li>
             <li className="hover:text-accent duration-75">
-              <a href="#review">Review</a>
+              <a
+                href="#review"
+                onClick={() => {
+                  setIsMenuOpen(false);
+                }}>
+                Review
+              </a>
             </li>
             <li className="hover:text-accent duration-75">
-              <a href="#social">Social</a>
+              <a
+                href="#social"
+                onClick={() => {
+                  setIsMenuOpen(false);
+                }}>
+                Social
+              </a>
             </li>
           </ul>
           <span className="hsm: sm:hidden mt-[min(4rem,5vh)]">
