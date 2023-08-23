@@ -1,0 +1,18 @@
+.navBtn .line {
+  transition: 0.25s ease-in-out;
+  transform-origin: center;
+}
+
+.navBtn[aria-expanded="true"] :is(.top, .bottom) {
+  width: 0;
+  x: 20px;
+  y: 19px;
+}
+
+.navBtn[aria-expanded="true"] .middle1 {
+  rotate: 45deg;
+}
+
+.navBtn[aria-expanded="true"] .middle2 {
+  rotate: -45deg;
+}

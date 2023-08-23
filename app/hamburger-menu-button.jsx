@@ -1,7 +1,9 @@
+import styles from "./hamburger-menu-button.module.css";
+
 export default function HamburgerMenuButton({ isExpanded, onClick }) {
   return (
     <button
-      className="nav-btn bg-black group rounded-full duration-75 sm:hidden hover:bg-accent"
+      className={`${styles.navBtn} bg-black group rounded-full duration-75 sm:hidden hover:bg-accent`}
       onClick={onClick}
       aria-controls="primary-navigation"
       aria-expanded={isExpanded}>
@@ -15,7 +17,7 @@ export default function HamburgerMenuButton({ isExpanded, onClick }) {
         xmlns="http://www.w3.org/2000/svg">
         <g>
           <rect
-            className="line top"
+            className={`${styles.line} ${styles.top}`}
             x="11"
             y="14"
             rx="1"
@@ -23,7 +25,7 @@ export default function HamburgerMenuButton({ isExpanded, onClick }) {
             height="2"
           />
           <rect
-            className="line middle-1"
+            className={`${styles.line} ${styles.middle1}`}
             x="11"
             y="19"
             rx="1"
@@ -31,7 +33,7 @@ export default function HamburgerMenuButton({ isExpanded, onClick }) {
             height="2"
           />
           <rect
-            className="line middle-2"
+            className={`${styles.line} ${styles.middle2}`}
             x="11"
             y="19"
             rx="1"
@@ -39,7 +41,7 @@ export default function HamburgerMenuButton({ isExpanded, onClick }) {
             height="2"
           />
           <rect
-            className="line bottom"
+            className={`${styles.line} ${styles.bottom}`}
             x="11"
             y="24"
             rx="1"
